@@ -101,6 +101,6 @@ app.post('/getChat', async (req, res) => {
 /**
 * now listing the server on port number 3013 :)
 * */
-app.listen(3013, () => {
+app.listen(process.env.PORT || 3013, () => {
     console.log("Server is Running on port 3013");
 })
